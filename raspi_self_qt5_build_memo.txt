@@ -1,0 +1,267 @@
+セルフコンパイルを実施
+RaspberryPi3B+を入手
+http://www.tal.org/tutorials/building-qt-510-raspberry-pi-debian-stretch
+上記URLの推奨によりスワップ領域（ファイル）をデフォルトからOS認識メモリサイズの2倍となるよう調整
+	sudo service dphys-swapfile stop
+	sudo vi /etc/dphys-swapfile
+		#CONF_SWAPSIZE=100
+		CONF_SWAPFACTOR=2
+	sudo service dphys-swapfile start
+
+	mkdir ~/qt5
+	cd ~/qt5
+	wget https://download.qt.io/official_releases/qt/5.11/5.11.1/single/qt-everywhere-src-5.11.1.tar.xz
+	tar xf qt-everywhere-src-5.11.1.tar.xz
+	sudo apt-get update
+	sudo apt-get install build-essential libfontconfig1-dev libdbus-1-dev libfreetype6-dev libicu-dev   \
+                         libinput-dev libxkbcommon-dev libsqlite3-dev libssl-dev libpng-dev libjpeg-dev \
+                         libglib2.0-dev libraspberrypi-dev
+
+	オプションがあれば必要なパッケージをインストールする必要があるらしいが、今回の案件では、特にないと判断し、
+	上記のみインストールとした。
+
+	Raspbian Stretch上のOpenGLライブラリファイルは、MesaがインストールするOpenGLライブラリと競合しないように
+	名前を変更しています。不幸にも、Qtのコンフィギュアスクリプトはまだ古い名前を使用しています。
+	これを解決するために下記の解決方法があります。
+
+	シンボリックリンクを作成する方法が簡単そうなので、それを実施
+	（もし修正されてても問題が少なそう）
+
+	/opt/vc/libにて下記を実施：
+		sudo ln -s libbrcmEGL.so libEGL.so
+		sudo ln -s libbrcmGLESv2.so libGLESv2.so
+		sudo ln -s libbrcmOpenVG.so libOpenVG.so
+		sudo ln -s libbrcmWFC.so libWFC.so
+
+
+	以下でconfigure
+		cd ~/qt5
+		mkdir build
+		cd build
+		PKG_CONFIG_LIBDIR=/usr/lib/arm-linux-gnueabihf/pkgconfig:/usr/share/pkgconfig PKG_CONFIG_SYSROOT_DIR=/ ../qt-everywhere-src-5.11.1/configure -v -opengl es2 -eglfs -no-gtk -device \
+			linux-rasp-pi-g++ -device-option CROSS_COMPILE=/usr/bin/ -opensource -confirm-license -release -reduce-exports -force-pkg-config -no-kms -nomake examples -no-compile-examples -no-pch \
+			-skip qtwayland -skip qtwebengine -no-feature-geoservices_mapboxgl -qt-pcre -ssl -evdev -system-freetype -fontconfig -glib -prefix /opt/Qt5.11
+
+		14:20 - 14:40
+
+	configureの概要
+
+			Configure summary:
+
+			Building on: linux-g++ (arm, CPU features: <none>)
+			Building for: devices/linux-rasp-pi-g++ (arm, CPU features: <none>)
+			Configuration: cross_compile use_gold_linker enable_new_dtags largefile shared rpath release c++11 c++14 c++1z concurrent dbus reduce_exports stl
+			Build options:
+			  Mode ................................... release
+			  Optimize release build for size ........ no
+			  Building shared libraries .............. yes
+			  Using C++ standard ..................... C++1z
+			  Using ccache ........................... no
+			  Using gold linker ...................... yes
+			  Using new DTAGS ........................ yes
+			  Using precompiled headers .............. no
+			  Using LTCG ............................. no
+			  Target compiler supports:
+			    NEON ................................. no
+			  Build parts ............................ libs
+			Qt modules and options:
+			  Qt Concurrent .......................... yes
+			  Qt D-Bus ............................... yes
+			  Qt D-Bus directly linked to libdbus .... yes
+			  Qt Gui ................................. yes
+			  Qt Network ............................. yes
+			  Qt Sql ................................. yes
+			  Qt Testlib ............................. yes
+			  Qt Widgets ............................. yes
+			  Qt Xml ................................. yes
+			Support enabled for:
+			  Using pkg-config ....................... yes
+			  udev ................................... yes
+			  Using system zlib ...................... yes
+			Qt Core:
+			  DoubleConversion ....................... yes
+			    Using system DoubleConversion ........ no
+			  GLib ................................... yes
+			  iconv .................................. no
+			  ICU .................................... yes
+			  Tracing backend ........................ <none>
+			  Logging backends:
+			    journald ............................. no
+			    syslog ............................... no
+			    slog2 ................................ no
+			  Using system PCRE2 ..................... no
+			Qt Network:
+			  getifaddrs() ........................... yes
+			  IPv6 ifname ............................ yes
+			  libproxy ............................... no
+			  Linux AF_NETLINK ....................... yes
+			  OpenSSL ................................ yes
+			    Qt directly linked to OpenSSL ........ no
+			  OpenSSL 1.1 ............................ yes
+			  SCTP ................................... no
+			  Use system proxies ..................... yes
+			Qt Gui:
+			  Accessibility .......................... yes
+			  FreeType ............................... yes
+			    Using system FreeType ................ yes
+			  HarfBuzz ............................... yes
+			    Using system HarfBuzz ................ no
+			  Fontconfig ............................. yes
+			  Image formats:
+			    GIF .................................. yes
+			    ICO .................................. yes
+			    JPEG ................................. yes
+			      Using system libjpeg ............... yes
+			    PNG .................................. yes
+			      Using system libpng ................ yes
+			  EGL .................................... yes
+			  OpenVG ................................. yes
+			  OpenGL:
+			    Desktop OpenGL ....................... no
+			    OpenGL ES 2.0 ........................ yes
+			    OpenGL ES 3.0 ........................ no
+			    OpenGL ES 3.1 ........................ no
+			    OpenGL ES 3.2 ........................ no
+			  Vulkan ................................. no
+			  Session Management ..................... yes
+			Features used by QPA backends:
+			  evdev .................................. yes
+			  libinput ............................... yes
+			  INTEGRITY HID .......................... no
+			  mtdev .................................. no
+			  tslib .................................. no
+			  xkbcommon-evdev ........................ yes
+			QPA backends:
+			  DirectFB ............................... no
+			  EGLFS .................................. yes
+			  EGLFS details:
+			    EGLFS OpenWFD ........................ no
+			    EGLFS i.Mx6 .......................... no
+			    EGLFS i.Mx6 Wayland .................. no
+			    EGLFS RCAR ........................... no
+			    EGLFS EGLDevice ...................... no
+			    EGLFS GBM ............................ no
+			    EGLFS VSP2 ........................... no
+			    EGLFS Mali ........................... no
+			    EGLFS Raspberry Pi ................... yes					＜＝＝＝＝＝＝＝＝＝これを確認！！！
+			    EGL on X11 ........................... no
+			  LinuxFB ................................ yes
+			  VNC .................................... yes
+			  Mir client ............................. no
+			Qt Widgets:
+			  GTK+ ................................... no
+			  Styles ................................. Fusion Windows
+			Qt PrintSupport:
+			  CUPS ................................... no
+			Qt Sql:
+			  DB2 (IBM) .............................. no
+			  InterBase .............................. no
+			  MySql .................................. no
+			  OCI (Oracle) ........................... no
+			  ODBC ................................... no
+			  PostgreSQL ............................. no
+			  SQLite2 ................................ no
+			  SQLite ................................. yes
+			    Using system provided SQLite ......... no
+			  TDS (Sybase) ........................... no
+			Qt Testlib:
+			  Tester for item models ................. yes
+			Qt SerialBus:
+			  Socket CAN ............................. yes
+			  Socket CAN FD .......................... yes
+			QtXmlPatterns:
+			  XML schema support ..................... yes
+			Qt QML:
+			  QML network support .................... yes
+			  QML debugging and profiling support .... yes
+			  QML delegate model ..................... yes
+			Qt Quick:
+			  Direct3D 12 ............................ no
+			  AnimatedImage item ..................... yes
+			  Canvas item ............................ yes
+			  Support for Qt Quick Designer .......... yes
+			  Flipable item .......................... yes
+			  GridView item .......................... yes
+			  ListView item .......................... yes
+			  Path support ........................... yes
+			  PathView item .......................... yes
+			  Positioner items ....................... yes
+			  Repeater item .......................... yes
+			  ShaderEffect item ...................... yes
+			  Sprite item ............................ yes
+			Qt Gamepad:
+			  SDL2 ................................... no
+			Qt 3D:
+			  Assimp ................................. yes
+			  System Assimp .......................... no
+			  Output Qt3D Job traces ................. no
+			  Output Qt3D GL traces .................. no
+			  Use SSE2 instructions .................. no
+			  Use AVX2 instructions .................. no
+			  Aspects:
+			    Render aspect ........................ yes
+			    Input aspect ......................... yes
+			    Logic aspect ......................... yes
+			    Animation aspect ..................... yes
+			    Extras aspect ........................ yes
+			Qt 3D Renderers:
+			  OpenGL Renderer ........................ yes
+			Qt 3D GeometryLoaders:
+			  Autodesk FBX ........................... no
+			Qt Bluetooth:
+			  BlueZ .................................. no
+			  BlueZ Low Energy ....................... no
+			  Linux Crypto API ....................... no
+			  WinRT Bluetooth API (desktop & UWP) .... no
+			Qt Sensors:
+			  sensorfw ............................... no
+			Qt Quick Controls 2:
+			  Styles ................................. Default Fusion Imagine Material Universal
+			Qt Quick Templates 2:
+			  Hover support .......................... yes
+			  Multi-touch support .................... yes
+			Qt Positioning:
+			  Gypsy GPS Daemon ....................... no
+			  WinRT Geolocation API .................. no
+			Qt Location:
+			  Qt.labs.location experimental QML plugin . yes
+			  Geoservice plugins:
+			    OpenStreetMap ........................ yes
+			    HERE ................................. yes
+			    Esri ................................. yes
+			    Mapbox ............................... yes
+			    MapboxGL ............................. no
+			    Itemsoverlay ......................... yes
+			Qt Multimedia:
+			  ALSA ................................... no
+			  GStreamer 1.0 .......................... no
+			  GStreamer 0.10 ......................... no
+			  Video for Linux ........................ yes
+			  OpenAL ................................. no
+			  PulseAudio ............................. no
+			  Resource Policy (libresourceqt5) ....... no
+			  Windows Audio Services ................. no
+			  DirectShow ............................. no
+			  Windows Media Foundation ............... no
+
+			Note: Also available for Linux: linux-clang linux-icc
+
+			Note: Dropped compiler flags '-pthread' when detecting library 'glib'.
+
+			Qt is now configured for building. Just run 'make'.
+			Once everything is built, you must run 'make install'.
+			Qt will be installed into '/opt/Qt5.11'.
+
+			Prior to reconfiguration, make sure you remove any leftovers from
+			the previous build.
+
+			pi@raspberrypi:~/qt5/build $
+
+			make -j8
+
+			make 中　約8時間で終了
+			sudo make install 
+
+			PATH=/opt/qt5/bin:$PATH 的なことを実施。
+
+--------------------------------------------------
