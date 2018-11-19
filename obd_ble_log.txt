@@ -1,0 +1,1785 @@
+@ RAW Open: hcitool (privileged) version 2.22                {0x0003} 24.019005
+@ RAW Close: hcitool                                         {0x0003} 24.019089
+@ RAW Open: hcitool (privileged) version 2.22         {0x0003} [hci0] 24.019181
+< HCI Command: LE Set Scan Parameters (0x08|0x000b) plen 7     [hci0] 24.019301
+        Type: Active (0x01)
+        Interval: 10.000 msec (0x0010)
+        Window: 10.000 msec (0x0010)
+        Own address type: Public (0x00)
+        Filter policy: Accept all advertisement (0x00)
+> HCI Event: Command Complete (0x0e) plen 4                    [hci0] 24.020230
+      LE Set Scan Parameters (0x08|0x000b) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Scan Enable (0x08|0x000c) plen 2         [hci0] 24.020494
+        Scanning: Enabled (0x01)
+        Filter duplicates: Enabled (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                    [hci0] 24.022201
+      LE Set Scan Enable (0x08|0x000c) ncmd 1
+        Status: Success (0x00)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 24.093189
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -47 dBm (0xd1)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 24.151195
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -38 dBm (0xda)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 24.153190
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -38 dBm (0xda)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 24.201191
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -54 dBm (0xca)
+> HCI Event: LE Meta Event (0x3e) plen 39                      [hci0] 24.217191
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 27
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: 92a41396-87fa-a499-214e-ead9b75c7650
+          Version: 64154.59207
+          TX power: -50 dB
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 24.305198
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -48 dBm (0xd0)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 24.307193
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -48 dBm (0xd0)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 24.310198
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -41 dBm (0xd7)
+> HCI Event: LE Meta Event (0x3e) plen 42                      [hci0] 24.344193
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 30
+        Company: Sony Corporation (301)
+          Data: 020001108eb116455ac74198a083ff25c30f53c2967bb60963d2
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 24.420200
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -50 dBm (0xce)
+> HCI Event: LE Meta Event (0x3e) plen 39                      [hci0] 24.456195
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 27
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: 92a41396-87fa-a499-214e-ead9b75c7650
+          Version: 64154.59207
+          TX power: -50 dB
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 42                      [hci0] 24.459196
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 30
+        Company: Sony Corporation (301)
+          Data: 020001108eb116455ac74198a083ff25c30f53c2967bb60963d2
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 24.461201
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -48 dBm (0xd0)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 24.463196
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -48 dBm (0xd0)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 24.517196
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -43 dBm (0xd5)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 24.618199
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -45 dBm (0xd3)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 24.620205
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -46 dBm (0xd2)
+> HCI Event: LE Meta Event (0x3e) plen 26                      [hci0] 24.671201
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 7B:6C:C2:2B:69:96 (Resolvable)
+        Data length: 14
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 071ccfdf3f
+        RSSI: -92 dBm (0xa4)
+> HCI Event: LE Meta Event (0x3e) plen 33                      [hci0] 24.699199
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 12                      [hci0] 24.700217
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 24.729201
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -43 dBm (0xd5)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 24.775207
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -38 dBm (0xda)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 24.777202
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -38 dBm (0xda)
+> HCI Event: LE Meta Event (0x3e) plen 33                      [hci0] 24.819202
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 12                      [hci0] 24.820224
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 24.929204
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -50 dBm (0xce)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 24.931206
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -38 dBm (0xda)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 24.933205
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -38 dBm (0xda)
+> HCI Event: LE Meta Event (0x3e) plen 39                      [hci0] 24.966205
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 27
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: 92a41396-87fa-a499-214e-ead9b75c7650
+          Version: 64154.59207
+          TX power: -50 dB
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 25.030212
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -42 dBm (0xd6)
+> HCI Event: LE Meta Event (0x3e) plen 39                      [hci0] 25.086213
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 27
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: 92a41396-87fa-a499-214e-ead9b75c7650
+          Version: 64154.59207
+          TX power: -50 dB
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 25.088224
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -47 dBm (0xd1)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 25.090213
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -47 dBm (0xd1)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 25.138208
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -49 dBm (0xcf)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 25.245216
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -44 dBm (0xd4)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 25.247211
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -45 dBm (0xd3)
+> HCI Event: LE Meta Event (0x3e) plen 33                      [hci0] 25.329212
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 12                      [hci0] 25.330230
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 25.347225
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -47 dBm (0xd1)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 25.398213
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -44 dBm (0xd4)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 25.400219
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -44 dBm (0xd4)
+> HCI Event: LE Meta Event (0x3e) plen 33                      [hci0] 25.447214
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 12                      [hci0] 25.448224
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 25.451217
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -42 dBm (0xd6)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 25.557216
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -44 dBm (0xd4)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 25.559216
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -38 dBm (0xda)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 25.561217
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -38 dBm (0xda)
+> HCI Event: LE Meta Event (0x3e) plen 42                      [hci0] 25.598216
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 30
+        Company: Sony Corporation (301)
+          Data: 020001108eb116455ac74198a083ff25c30f53c2967bb60963d2
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 25.718220
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -46 dBm (0xd2)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 25.720230
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -49 dBm (0xcf)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 25.769221
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -45 dBm (0xd3)
+> HCI Event: LE Meta Event (0x3e) plen 39                      [hci0] 25.841222
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 27
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: 92a41396-87fa-a499-214e-ead9b75c7650
+          Version: 64154.59207
+          TX power: -50 dB
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 25.871255
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -44 dBm (0xd4)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 25.878222
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -47 dBm (0xd1)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 25.880230
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -45 dBm (0xd3)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 25.973224
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -58 dBm (0xc6)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 26.035232
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -38 dBm (0xda)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 26.037226
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -37 dBm (0xdb)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 26.077226
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -42 dBm (0xd6)
+> HCI Event: LE Meta Event (0x3e) plen 33                      [hci0] 26.081226
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 27                      [hci0] 26.095232
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 70:73:CB:D2:BD:C7 (Apple, Inc.)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0245c0a8b304
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 26.178227
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -58 dBm (0xc6)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 26.188228
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -37 dBm (0xdb)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 26.190236
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -37 dBm (0xdb)
+> HCI Event: LE Meta Event (0x3e) plen 42                      [hci0] 26.226229
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 30
+        Company: Sony Corporation (301)
+          Data: 020001108eb116455ac74198a083ff25c30f53c2967bb60963d2
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 26.282230
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -46 dBm (0xd2)
+> HCI Event: LE Meta Event (0x3e) plen 27                      [hci0] 26.284230
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 70:73:CB:D2:BD:C7 (Apple, Inc.)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0245c0a8b304
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 26.348231
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -47 dBm (0xd1)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 26.384231
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -42 dBm (0xd6)
+> HCI Event: LE Meta Event (0x3e) plen 33                      [hci0] 26.466233
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 12                      [hci0] 26.467244
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 26.502235
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -47 dBm (0xd1)
+> HCI Event: LE Meta Event (0x3e) plen 33                      [hci0] 26.586234
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 12                      [hci0] 26.587249
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 26.656238
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -44 dBm (0xd4)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 26.799238
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -42 dBm (0xd6)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 26.813240
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -46 dBm (0xd2)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 26.815245
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -37 dBm (0xdb)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 26.817239
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -38 dBm (0xda)
+> HCI Event: LE Meta Event (0x3e) plen 42                      [hci0] 26.858240
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 30
+        Company: Sony Corporation (301)
+          Data: 020001108eb116455ac74198a083ff25c30f53c2967bb60963d2
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 26.972243
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -37 dBm (0xdb)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 26.974243
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -37 dBm (0xdb)
+> HCI Event: LE Meta Event (0x3e) plen 33                      [hci0] 27.101245
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 12                      [hci0] 27.102258
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 33                      [hci0] 27.222247
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 12                      [hci0] 27.223263
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 42                      [hci0] 27.246246
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 30
+        Company: Sony Corporation (301)
+          Data: 020001108eb116455ac74198a083ff25c30f53c2967bb60963d2
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 22                      [hci0] 27.288248
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -44 dBm (0xd4)
+> HCI Event: LE Meta Event (0x3e) plen 23                      [hci0] 27.290254
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -44 dBm (0xd4)
+> HCI Event: LE Meta Event (0x3e) plen 43                      [hci0] 27.302250
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -48 dBm (0xd0)
+< HCI Command: LE Set Scan Enable (0x08|0x000c) plen 2         [hci0] 27.308986
+        Scanning: Disabled (0x00)
+        Filter duplicates: Enabled (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                    [hci0] 27.314257
+      LE Set Scan Enable (0x08|0x000c) ncmd 1
+        Status: Success (0x00)
+@ RAW Close: hcitool                                  {0x0003} [hci0] 27.314462
+
+^Cpi@raspberrypi:~ $ 
+--------------------------------
+
+0x303130440d	010D<CR>
+0x41545350300D  ATSP0<CR>
+
+
+Linux raspberrypi 4.14.71-v7+ #1145 SMP Fri Sep 21 15:38:35 BST 2018 armv7l
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+Last login: Mon Nov 19 00:08:24 2018 from 192.168.11.9
+
+SSH is enabled and the default password for the 'pi' user has not been changed.
+This is a security risk - please login as the 'pi' user and type 'passwd' to set                a new password.
+
+pi@raspberrypi:~ $ sudo hcitool lescan
+LE Scan ...
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+70:73:CB:D2:BD:C7 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+01:EC:0B:9D:F4:03 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+01:EC:0B:9D:F4:03 (unknown)
+^Cpi@raspberrypi:~ $ btmon &
+[1] 1039
+pi@raspberrypi:~ $ Bluetooth monitor ver 5.43
+Failed to bind channel: Operation not permitted
+
+[1]+  èIóπ 1                btmon
+pi@raspberrypi:~ $ sudo btmon &
+[1] 1062
+pi@raspberrypi:~ $ Bluetooth monitor ver 5.43
+= Note: Linux version 4.14.71-v7+ (armv7l)                             0.628493
+= Note: Bluetooth subsystem version 2.22                               0.628506
+= New Index: 00:1B:DC:06:B3:18 (Primary,USB,hci0)               [hci0] 0.628512
+= Open Index: 00:1B:DC:06:B3:18                                 [hci0] 0.628515
+= Index Info: 00:1B:DC:06:B3:18 (Cambridge Silicon Radio)       [hci0] 0.628521
+@ MGMT Open: bluetoothd (privileged) version 1.14             {0x0001} 0.628527
+@ MGMT Open: btmon (privileged) version 1.14                  {0x0002} 0.628894
+
+pi@raspberrypi:~ $
+pi@raspberrypi:~ $
+pi@raspberrypi:~ $ sudo hcitool lescan
+@ RAW Open: hcitool (privileged) version 2.22                 {0x0003} 6.415092
+@ RAW Close: hcitool                                          {0x0003} 6.415208
+@ RAW Open: hcitool (privileged) version 2.22          {0x0003} [hci0] 6.415347
+< HCI Command: LE Set Scan Parameters (0x08|0x000b) plen 7      [hci0] 6.415456
+        Type: Active (0x01)
+        Interval: 10.000 msec (0x0010)
+        Window: 10.000 msec (0x0010)
+        Own address type: Public (0x00)
+        Filter policy: Accept all advertisement (0x00)
+> HCI Event: Command Complete (0x0e) plen 4                     [hci0] 6.417048
+      LE Set Scan Parameters (0x08|0x000b) ncmd 1
+        Status: Success (0x00)
+< HCI Command: LE Set Scan Enable (0x08|0x000c) plen 2          [hci0] 6.417281
+        Scanning: Enabled (0x01)
+        Filter duplicates: Enabled (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                     [hci0] 6.419036
+      LE Set Scan Enable (0x08|0x000c) ncmd 1
+        Status: Success (0x00)
+LE Scan ...
+> HCI Event: LE Meta Event (0x3e) plen 22                       [hci0] 6.496024
+DD:0D:30:46:AB:E7 (unknown)
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -47 dBm (0xd1)
+> HCI Event: LE Meta Event (0x3e) plen 23                       [hci0] 6.498028
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -47 dBm (0xd1)
+DD:0D:30:46:AB:E7 IOS-Vlink
+> HCI Event: LE Meta Event (0x3e) plen 43                       [hci0] 6.614029
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -42 dBm (0xd6)
+01:EC:0B:9D:F4:03 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 39                       [hci0] 6.643023
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 27
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: 92a41396-87fa-a499-214e-ead9b75c7650
+          Version: 64154.59207
+          TX power: -50 dB
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 42                       [hci0] 6.648024
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+DD:0D:30:46:AB:E7 (unknown)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 30
+        Company: Sony Corporation (301)
+          Data: 020001108eb116455ac74198a083ff25c30f53c2967bb60963d2
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 22                       [hci0] 6.653033
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+DD:0D:30:46:AB:E7 IOS-Vlink
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -47 dBm (0xd1)
+> HCI Event: LE Meta Event (0x3e) plen 23                       [hci0] 6.655035
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -44 dBm (0xd4)
+01:EC:0B:9D:F4:03 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 43                       [hci0] 6.720025
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -55 dBm (0xc9)
+D8:0F:99:57:3B:F6 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 33                       [hci0] 6.761023
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+D8:0F:99:57:3B:F6 (unknown)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 12                       [hci0] 6.762054
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -88 dBm (0xa8)
+DD:0D:30:46:AB:E7 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 22                       [hci0] 6.807024
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -44 dBm (0xd4)
+DD:0D:30:46:AB:E7 IOS-Vlink
+> HCI Event: LE Meta Event (0x3e) plen 23                       [hci0] 6.809036
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -45 dBm (0xd3)
+01:EC:0B:9D:F4:03 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 43                       [hci0] 6.824029
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -42 dBm (0xd6)
+01:EC:0B:9D:F4:03 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 43                       [hci0] 6.924030
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -55 dBm (0xc9)
+DD:0D:30:46:AB:E7 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 22                       [hci0] 6.968023
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -37 dBm (0xdb)
+DD:0D:30:46:AB:E7 IOS-Vlink
+> HCI Event: LE Meta Event (0x3e) plen 23                       [hci0] 6.970024
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -38 dBm (0xda)
+01:EC:0B:9D:F4:03 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 43                       [hci0] 7.030024
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -49 dBm (0xcf)
+DD:0D:30:46:AB:E7 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 22                       [hci0] 7.124029
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -47 dBm (0xd1)
+DD:0D:30:46:AB:E7 IOS-Vlink
+> HCI Event: LE Meta Event (0x3e) plen 23                       [hci0] 7.126027
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -47 dBm (0xd1)
+01:EC:0B:9D:F4:03 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 43                       [hci0] 7.235024
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -49 dBm (0xcf)
+D8:0F:99:57:3B:F6 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 33                       [hci0] 7.307022
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+D8:0F:99:57:3B:F6 (unknown)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 12                       [hci0] 7.308033
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -89 dBm (0xa7)
+D8:0F:99:57:3B:F6 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 33                       [hci0] 7.425024
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+D8:0F:99:57:3B:F6 (unknown)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 12                       [hci0] 7.426043
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 0
+        RSSI: -88 dBm (0xa8)
+DD:0D:30:46:AB:E7 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 22                       [hci0] 7.438023
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -43 dBm (0xd5)
+> HCI Event: LE Meta Event (0x3e) plen 23                       [hci0] 7.440028
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+DD:0D:30:46:AB:E7 IOS-Vlink
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -44 dBm (0xd4)
+01:EC:0B:9D:F4:03 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 43                       [hci0] 7.542023
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -42 dBm (0xd6)
+D8:0F:99:57:3B:F6 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 42                       [hci0] 7.572023
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 30
+        Company: Sony Corporation (301)
+          Data: 020001108eb116455ac74198a083ff25c30f53c2967bb60963d2
+        RSSI: -88 dBm (0xa8)
+DD:0D:30:46:AB:E7 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 22                       [hci0] 7.592023
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 10
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        TX power: 4 dBm
+        16-bit Service UUIDs (partial): 1 entry
+          Unknown (0x18f0)
+        RSSI: -38 dBm (0xda)
+DD:0D:30:46:AB:E7 IOS-Vlink
+> HCI Event: LE Meta Event (0x3e) plen 23                       [hci0] 7.594031
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Scan response - SCAN_RSP (0x04)
+        Address type: Random (0x01)
+        Address: DD:0D:30:46:AB:E7 (Static)
+        Data length: 11
+        Name (complete): IOS-Vlink
+        RSSI: -38 dBm (0xda)
+01:EC:0B:9D:F4:03 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 43                       [hci0] 7.643022
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 01:EC:0B:9D:F4:03 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 0109200236045458b0495de0ccdfcae8ed7759e5cb649bd7530609
+        RSSI: -58 dBm (0xc6)
+D8:0F:99:57:3B:F6 (unknown)
+> HCI Event: LE Meta Event (0x3e) plen 33                       [hci0] 7.670024
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: D8:0F:99:57:3B:F6 (Hon Hai Precision Ind. Co.,Ltd.)
+        Data length: 21
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (cbbfe0e1-f7f3-4206-84e0-84cbb3d09dfc)
+        RSSI: -89 dBm (0xa7)
+^C< HCI Command: LE Set Scan Enable (0x08|0x000c) plen 2          [hci0] 7.67832               5
+        Scanning: Disabled (0x00)
+        Filter duplicates: Enabled (0x01)
+> HCI Event: Command Complete (0x0e) plen 4                     [hci0] 7.688031
+      LE Set Scan Enable (0x08|0x000c) ncmd 1
+        Status: Success (0x00)
+@ RAW Close: hcitool                                   {0x0003} [hci0] 7.688183
+pi@raspberrypi:~ $ fg
+sudo btmon
+^Cpi@raspberrypi:~ $ sudo hcitool lescan
+LE Scan ...
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+01:EC:0B:9D:F4:03 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+01:EC:0B:9D:F4:03 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+7B:6C:C2:2B:69:96 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+01:EC:0B:9D:F4:03 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+01:EC:0B:9D:F4:03 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+70:73:CB:D2:BD:C7 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+70:73:CB:D2:BD:C7 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+01:EC:0B:9D:F4:03 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+D8:0F:99:57:3B:F6 (unknown)
+DD:0D:30:46:AB:E7 (unknown)
+DD:0D:30:46:AB:E7 IOS-Vlink
+01:EC:0B:9D:F4:03 (unknown)
+^C
+
+pi@raspberrypi:~ $ sudo gatttool -t random -b dd:0d:30:46:ab:e7 -I
+[dd:0d:30:46:ab:e7][LE]> connect
+Attempting to connect to dd:0d:30:46:ab:e7
+Connection successful
+[dd:0d:30:46:ab:e7][LE]> primary
+attr handle: 0x0001, end grp handle: 0x0005 uuid: 00001800-0000-1000-8000-00805f               9b34fb
+attr handle: 0x0006, end grp handle: 0x0008 uuid: 00001801-0000-1000-8000-00805f               9b34fb
+attr handle: 0x0009, end grp handle: 0x000e uuid: 000018f0-0000-1000-8000-00805f               9b34fb
+attr handle: 0x000f, end grp handle: 0x0019 uuid: 0000180a-0000-1000-8000-00805f               9b34fb
+attr handle: 0x001a, end grp handle: 0x001d uuid: e7810a71-73ae-499d-8c15-faa9ae               f0c3f2
+[dd:0d:30:46:ab:e7][LE]> primary
+attr handle: 0x0001, end grp handle: 0x0005 uuid: 00001800-0000-1000-8000-00805f9b34fb
+attr handle: 0x0006, end grp handle: 0x0008 uuid: 00001801-0000-1000-8000-00805f9b34fb
+attr handle: 0x0009, end grp handle: 0x000e uuid: 000018f0-0000-1000-8000-00805f9b34fb
+attr handle: 0x000f, end grp handle: 0x0019 uuid: 0000180a-0000-1000-8000-00805f9b34fb
+attr handle: 0x001a, end grp handle: 0x001d uuid: e7810a71-73ae-499d-8c15-faa9aef0c3f2
+[dd:0d:30:46:ab:e7][LE]> char-desc 0x1a 0x1d
+handle: 0x001a, uuid: 00002800-0000-1000-8000-00805f9b34fb
+handle: 0x001b, uuid: 00002803-0000-1000-8000-00805f9b34fb
+handle: 0x001c, uuid: bef8d6c9-9c21-4c9e-b632-bd58c1009f9f
+handle: 0x001d, uuid: 00002902-0000-1000-8000-00805f9b34fb
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1d 0100
+Characteristic value was written successfully
+[dd:0d:30:46:ab:e7][LE]> cbarprea
+Error: cbarprea: command not found
+[dd:0d:30:46:ab:e7][LE]> char-read-hnd 0x1c
+Characteristic value/descriptor:
+[dd:0d:30:46:ab:e7][LE]> char-write
+Error: char-write: command not found
+[dd:0d:30:46:ab:e7][LE]> help
+help                                           Show this help
+exit                                           Exit interactive mode
+quit                                           Exit interactive mode
+connect         [address [address type]]       Connect to a remote device
+disconnect                                     Disconnect from a remote device
+primary         [UUID]                         Primary Service Discovery
+included        [start hnd [end hnd]]          Find Included Services
+characteristics [start hnd [end hnd [UUID]]]   Characteristics Discovery
+char-desc       [start hnd] [end hnd]          Characteristics Descriptor Discovery
+char-read-hnd   <handle>                       Characteristics Value/Descriptor Read by handle
+char-read-uuid  <UUID> [start hnd] [end hnd]   Characteristics Value/Descriptor Read by UUID
+char-write-req  <handle> <new value>           Characteristic Value Write (Write Request)
+char-write-cmd  <handle> <new value>           Characteristic Value Write (No response)
+sec-level       [low | medium | high]          Set security level. Default: low
+mtu             <value>                        Exchange MTU for GATT/ATT
+[dd:0d:30:46:ab:e7][LE]> char-write-req -a 0x1c
+Error: A valid handle is required
+[dd:0d:30:46:ab:e7][LE]> char-write-req -a 1c
+Error: A valid handle is required
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c
+Usage: char-write-req <handle> <new value>
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c 0x41545a13
+Characteristic value was written successfully
+Notification handle = 0x001c value: 00 41 54 5a 13
+Notification handle = 0x001c value: 3f 0d 0d 3e
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c 0x41545a0d
+Characteristic value was written successfully
+Notification handle = 0x001c value: 00 41 54 5a 0d
+Notification handle = 0x001c value: 0d 0d 45 4c 4d 33 32 37 20 76 32 2e 31 0d 0d 3e
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c 0x303130440d
+Characteristic value was written successfully
+Notification handle = 0x001c value: 00 30 31 30 44 0d
+Notification handle = 0x001c value: 42 55 53 20 49 4e 49 54 3a 20
+Notification handle = 0x001c value: 2e
+Notification handle = 0x001c value: 2e
+Notification handle = 0x001c value: 2e
+Notification handle = 0x001c value: 45 52 52 4f 52 0d 0d 3e
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c 0x41545350300D
+Characteristic value was written successfully
+Notification handle = 0x001c value: 00 41 54 53 50 30 0d
+Notification handle = 0x001c value: 4f 4b 0d 0d 3e
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c 0x303130440d
+Characteristic value was written successfully
+Notification handle = 0x001c value: 00 30 31 30 44 0d
+Notification handle = 0x001c value: 53
+Notification handle = 0x001c value: 45 41 52 43 48 49 4e 47 2e 2e 2e 0d
+Notification handle = 0x001c value: 34 31 20 30 44 20 30 30 20 0d 34 31 20 30 44 20 30 30 20 0d
+Notification handle = 0x001c value: 0d
+Notification handle = 0x001c value: 3e
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c 0x303130440d
+Characteristic value was written successfully
+Notification handle = 0x001c value: 00 30 31 30 44 0d
+Notification handle = 0x001c value: 34 31 20 30 44 20 30 30 20 0d 34 31 20 30 44 20 30 30 20 0d
+Notification handle = 0x001c value: 0d 3e
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c 0x303130440d
+Characteristic value was written successfully
+Notification handle = 0x001c value: 00 30 31 30 44 0d
+Notification handle = 0x001c value: 34 31 20 30 44 20 30 30 20 0d 34 31 20 30 44 20 30 30 20 0d
+Notification handle = 0x001c value: 0d 3e
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c 0x303130440d
+Characteristic value was written successfully
+Notification handle = 0x001c value: 00 30 31 30 44 0d
+Notification handle = 0x001c value: 34 31 20 30 44 20 30 30 20 0d 34 31 20 30 44 20 30 30 20 0d
+Notification handle = 0x001c value: 0d 3e
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c 0x303130440d
+Characteristic value was written successfully
+Notification handle = 0x001c value: 00 30 31 30 44 0d
+Notification handle = 0x001c value: 34 31 20 30 44 20 30 30 20 0d 34 31 20 30 44 20 30 30 20 0d
+Notification handle = 0x001c value: 0d 3e
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1c 0x303130440d
+Characteristic value was written successfully
+Notification handle = 0x001c value: 00 30 31 30 44 0d
+Notification handle = 0x001c value: 34 31 20 30 44 20 30 30 20 0d 34 31 20 30 44 20 30 30 20 0d
+Notification handle = 0x001c value: 0d 3e
+[dd:0d:30:46:ab:e7][LE]>
+
+
+
+----------------------
+
+
+[dd:0d:30:46:ab:e7][LE]> char-read-hnd 0x1a
+Characteristic value/descriptor: f2 c3 f0 ae a9 fa 15 8c 9d 49 ae 73 71 0a 81 e7
+[dd:0d:30:46:ab:e7][LE]> char-read-hnd 0x1b
+Characteristic value/descriptor: 3e 1c 00 9f 9f 00 c1 58 bd 32 b6 9e 4c 21 9c c9 d6 f8 be
+[dd:0d:30:46:ab:e7][LE]> char-read-hnd 0x1c
+Characteristic value/descriptor:
+[dd:0d:30:46:ab:e7][LE]> char-read-hnd 0x1d
+Characteristic value/descriptor: 3e 1c
+[dd:0d:30:46:ab:e7][LE]> char-write-req 0x1d 0100
+Characteristic value was written successfully
+[dd:0d:30:46:ab:e7][LE]> char-read-hnd 0x1d
+Characteristic value/descriptor: 3e 1c
+[dd:0d:30:46:ab:e7][LE]>
