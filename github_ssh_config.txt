@@ -1,0 +1,12 @@
+
+githubにSSH鍵登録する基本的な手順に関する情報
+	https://qiita.com/shizuma/items/2b2f873a0034839e47ce
+
+
+pushするときにhttpsだとパーミッション制限でpushできないとなる。
+sshで接続するように強制するための設定に関する情報。
+	https://qiita.com/nysalor/items/f779898eb88c1ce7be12
+
+
+gitconfig設定に関する基本的な内容
+	https://qiita.com/shionit/items/fb4a1a30538f8d335b35
