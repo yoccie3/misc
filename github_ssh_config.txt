@@ -10,3 +10,7 @@ sshで接続するように強制するための設定に関する情報。
 
 gitconfig設定に関する基本的な内容
 	https://qiita.com/shionit/items/fb4a1a30538f8d335b35
+
+
+TurtoiseGitでOpenSSHの鍵で認証させる方法（Putty形式に変換）
+	https://www.clear-code.com/blog/2009/7/8.html
